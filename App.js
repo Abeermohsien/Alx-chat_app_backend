@@ -59,3 +59,15 @@ function App() {
       <input
         type="text"
         value={input}
+       onChange={(e) => setInput(e.target.value)}
+       onKeyDown={(e) => {
+         if (e.key === 'Enter') sendMessage();
+       }}
+     />
+     <button onClick={sendMessage}>Send</button>
+     <button onClick={logout}>Logout</button>
+     <button onClick={() => setRoom('Room1')}>Join Room1</button>
+     <button onClick={() => setRoom('Room2')}>Join Room2</button>
+   </div>
+ );
+}
