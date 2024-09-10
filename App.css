@@ -1,0 +1,30 @@
+
+4. **Add Styling for the Chat Interface**
+
+Modify `App.css` to style the chat interface as needed.
+
+```css
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.chat-window {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+button {
+  padding: 8px 16px;
+}
